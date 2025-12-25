@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 def detect_missing(dataframe):
-    # Your code here
+    return dataframe.isna()
     pass
 
 # Sample DataFrame for testing
@@ -16,8 +16,6 @@ data = {
 
 df = pd.DataFrame(data)
 
-def detect_missing(dataframe):
-    return dataframe.isna()
 
     
 result = detect_missing(df)
