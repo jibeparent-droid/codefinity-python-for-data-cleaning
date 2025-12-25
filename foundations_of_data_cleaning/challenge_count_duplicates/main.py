@@ -10,11 +10,10 @@ data = {
     "Age": [25, 30, 25, 35, 30, 25],
     "City": ["NY", "LA", "NY", "SF", "LA", "NY"]
 }
-df = pd.DataFrame()
-def count_duplicates():
-    df.duplicaded()
+df = pd.DataFrame(data)
+
+def count_duplicates(df):
+    return df.duplicated().sum()
     
-
-
 result = count_duplicates(df)
 print(result)
